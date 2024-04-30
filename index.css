@@ -20,7 +20,7 @@ body {
 
 .main-section {
   background-color: #fff;
-  padding: 1em;
+  padding: 3em;
   order: 1;
 }
 
@@ -30,10 +30,15 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 1em;
 }
 
 .form-element-style {
   padding: 1em 0em;
+}
+
+.form-element-style input {
+  width: 100%;
 }
 
 .sign-in-line {
