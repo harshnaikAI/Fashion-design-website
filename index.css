@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, #ff007f 0%, #ff6b91 100%);
+}
+
+.container {
+  width: 95%;
+  margin: 0.5em auto;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* main-section */
+
+.main-section {
+  background-color: #fff;
+  padding: 1em;
+  order: 1;
+}
+
+/* form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-element-style {
+  padding: 1em 0em;
+}
+
+.sign-in-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-in-checkbox {
+  cursor: pointer;
+}
+
+input {
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 0.5em;
+}
+
+/* form-btn */
+.btn {
+  width: 100%;
+  background-color: rgb(232, 32, 32);
+  color: #fff;
+  border: none;
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  transition: transform 250ms;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.01);
+}
+
+/* form-links */
+.form-forget-password-link {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: firebrick;
+}
+
+a:active {
+  color: black;
+}
+
+/* secondary section */
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* media query  */
+@media (min-width: 787px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  section {
+    width: 50%;
+  }
+}
